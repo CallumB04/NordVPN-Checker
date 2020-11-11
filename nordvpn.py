@@ -124,6 +124,7 @@ def main():
                                 current_account += 1
                                 update_win_title(True, hits, fails, errors, current_account, total_accounts)
                                 print(f"{Fore.RED}[{Fore.WHITE}{now}{Fore.RED}][FAIL] {line}{Style.RESET_ALL}")
+                                break
 
                         except Exception as e:
                             now = datetime.now().strftime("%H:%M:%S")
